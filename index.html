@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b14">
+<meta name="description" content="Website komunitas guild Indomaret GG. IQ Mobile Legends: Bang Bang. Kenalan, lihat aturan, dan gabung bersama tim.">
+<title>INDOMARET GG. IQ | MLBB Guild</title>
+<style>
+:root{--bg:#080a12;--panel:#111522;--panel2:#171c2d;--text:#f4f6ff;--muted:#a7afc7;--gold:#ffd166;--cyan:#5de4ff;--pink:#ff4d8d;--line:#2b3248}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#20234a 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.5px}.logo{width:42px;height:42px;display:grid;place-items:center;border:2px solid var(--gold);border-radius:13px;background:linear-gradient(135deg,#252d53,#111522);color:var(--gold);font-size:19px;box-shadow:0 0 24px #ffd16620}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:800;border:1px solid var(--line);transition:.2s;cursor:pointer}.btn-primary{background:linear-gradient(100deg,var(--gold),#ff9e50);color:#17120a;border:0;box-shadow:0 8px 28px #ffb34720}.btn:hover{transform:translateY(-2px)}.btn-ghost{background:#ffffff08}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:72px 0 66px;min-height:570px}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:6px 11px;border:1px solid #5de4ff55;border-radius:999px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#57f5a2;box-shadow:0 0 12px #57f5a2}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.99;letter-spacing:-3px;margin:20px 0}.hero h1 span{color:var(--gold);text-shadow:0 0 35px #ffd16622}.hero p{max-width:570px;color:var(--muted);font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.fine{font-size:12px!important;color:#818ba8!important;margin-top:18px}
+.art{position:relative;min-height:390px;border:1px solid #ffffff18;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#1a2340,#10121e 65%);display:grid;place-items:center;isolation:isolate}.art:before,.art:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);z-index:-1}.art:before{width:310px;height:310px;background:radial-gradient(circle,#ffd16635,transparent 70%);top:-80px;right:-30px}.art:after{width:300px;height:300px;background:radial-gradient(circle,#5de4ff28,transparent 70%);bottom:-100px;left:-70px}.crest{width:min(75%,310px);aspect-ratio:1;display:grid;place-items:center;position:relative}.crest:before{content:"";position:absolute;inset:8%;border:2px solid var(--gold);transform:rotate(45deg);border-radius:28px;box-shadow:0 0 55px #ffd16618,inset 0 0 45px #ffd1660c}.crest-inner{width:75%;height:75%;border-radius:50%;border:1px solid #5de4ff88;background:linear-gradient(145deg,#222b49,#0a0c14);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 55px #5de4ff18}.crest-icon{font-size:64px;line-height:1.1}.crest-inner strong{font-size:22px;letter-spacing:1px}.crest-inner small{color:var(--gold);font-weight:900;letter-spacing:3px}.float{position:absolute;background:#101525dd;border:1px solid #ffffff1a;padding:11px 14px;border-radius:14px;font-size:12px;color:var(--muted);backdrop-filter:blur(10px)}.float b{color:var(--text);display:block;font-size:14px}.float.one{top:24px;left:20px}.float.two{right:18px;bottom:26px}
+section{padding:55px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.kicker{font-size:12px;color:var(--cyan);font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:7px 0 0;letter-spacing:-1px}.section-head p{color:var(--muted);max-width:450px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#151a2a,#0f121d);border:1px solid var(--line);border-radius:18px;padding:22px}.card-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:#ffd16618;color:var(--gold);font-size:22px;margin-bottom:15px}.card h3{margin:0 0 7px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rule{display:flex;gap:13px;align-items:flex-start;background:#ffffff05;border:1px solid var(--line);padding:16px;border-radius:14px}.num{flex:0 0 32px;height:32px;display:grid;place-items:center;border-radius:9px;background:#5de4ff15;color:var(--cyan);font-weight:900}.rule b{display:block;margin-bottom:3px}.rule span{color:var(--muted);font-size:14px}
+.roster{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.player{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:18px;text-align:center}.avatar{width:66px;height:66px;border-radius:20px;display:grid;place-items:center;margin:0 auto 12px;background:linear-gradient(135deg,#343d66,#1b2137);border:1px solid #ffffff18;font-size:28px}.player strong{display:block}.player small{color:var(--gold);font-weight:800}.player p{font-size:12px;color:var(--muted);margin:5px 0 0}
+.joinbox{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;border:1px solid #ffd16655;border-radius:22px;background:radial-gradient(ellipse at right,#ffd16613,transparent 50%),#111522}.joinbox h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px}.joinbox p{margin:0;color:var(--muted);max-width:620px}
+footer{border-top:1px solid var(--line);padding:25px 0;margin-top:40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.tag{color:var(--gold);font-weight:800}
+@media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:44px 0}.art{min-height:330px}.grid{grid-template-columns:1fr}.roster{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:12px}.joinbox{display:block}.joinbox .btn{margin-top:18px}}
+@media(max-width:420px){.hero h1{letter-spacing:-2px}.roster{grid-template-columns:1fr 1fr}.card{padding:18px}.rules{grid-template-columns:1fr}.float{font-size:11px;padding:8px 10px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="brand" href="#home"><span class="logo">IG</span><span>INDOMARET <span class="tag">GG. IQ</span></span></a>
+<div class="navlinks"><a href="#tentang">Tentang</a><a href="#aturan">Aturan</a><a href="#anggota">Anggota</a><a href="#gabung">Gabung</a></div>
+<a class="btn btn-ghost" href="#gabung">Masuk Guild ↗</a>
+</nav>
+</header>
+<main>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow"><span class="dot"></span> MOBILE LEGENDS COMMUNITY</div>
+<h1>MAIN BARENG.<br><span>NAIK RANK.</span><br>JADI LEGEND.</h1>
+<p>Selamat datang di <b>INDOMARET GG. IQ</b>, tempat mabar, belajar strategi, dan push rank bareng. Santai saat kalah, kompak saat menang. 💥</p>
+<div class="actions"><a class="btn btn-primary" href="#gabung">⚡ Gabung Sekarang</a><a class="btn btn-ghost" href="#tentang">Kenali Guild ↓</a></div>
+<p class="fine">Fan-made community website. Bukan situs resmi Moonton atau Mobile Legends: Bang Bang.</p>
+</div>
+<div class="art" aria-label="Emblem guild bergaya esports">
+<div class="float one"><b>TEAMWORK</b>Komunikasi dulu, savage kemudian</div>
+<div class="crest"><div class="crest-inner"><div class="crest-icon">⚔️</div><strong>INDOMARET</strong><small>GG. IQ</small></div></div>
+<div class="float two"><b>PLAY SMART</b>Strategi > asal war</div>
+</div>
+</div>
+<section id="tentang"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Siapa kita?</div><h2>Bukan cuma soal menang.</h2></div><p>Guild yang solid dibangun dari komunikasi, konsistensi, dan saling menghargai. Bukan dari ego yang lebih tinggi daripada rank.</p></div>
+<div class="grid">
+<div class="card"><div class="card-icon">🎮</div><h3>Mabar Bareng</h3><p>Cari teman satu tim untuk bermain bersama dan membangun chemistry di Land of Dawn.</p></div>
+<div class="card"><div class="card-icon">🧠</div><h3>Main Pakai Otak</h3><p>Belajar rotasi, objektif, draft, map awareness, dan kapan harus mundur dari team fight.</p></div>
+<div class="card"><div class="card-icon">🤝</div><h3>Tim yang Kompak</h3><p>Hormati semua anggota. Tidak toxic, tidak merendahkan pemain, dan mau belajar dari kekalahan.</p></div>
+</div>
+</div></section>
+<section id="aturan"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Kode tim</div><h2>Aturan guild</h2></div><p>Skill bisa dilatih. Sikap buruk juga bisa diperbaiki, kalau orangnya mau.</p></div>
+<div class="rules">
+<div class="rule"><div class="num">01</div><div><b>Jaga sikap</b><span>Hindari toxic, hinaan pribadi, dan drama yang tidak perlu.</span></div></div>
+<div class="rule"><div class="num">02</div><div><b>Komunikasi yang jelas</b><span>Gunakan chat atau voice untuk info penting, bukan menyalahkan tim.</span></div></div>
+<div class="rule"><div class="num">03</div><div><b>Utamakan objektif</b><span>Turret, Turtle, Lord, dan kerja sama lebih penting daripada mengejar kill.</span></div></div>
+<div class="rule"><div class="num">04</div><div><b>Hormati waktu anggota</b><span>Kalau sudah janji mabar, kabari tim jika tidak bisa hadir.</span></div></div>
+</div>
+</div></section>
+<section id="anggota"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Satu squad</div><h2>Struktur anggota</h2></div><p>Contoh posisi tim. Ubah nama dan role sesuai anggota guild yang sebenarnya.</p></div>
+<div class="roster">
+<div class="player"><div class="avatar">👑</div><strong>Ketua Guild</strong><small>LEADER</small><p>Atur jadwal dan arah tim</p></div>
+<div class="player"><div class="avatar">🛡️</div><strong>Roamer</strong><small>SETUP</small><p>Buka map dan lindungi tim</p></div>
+<div class="player"><div class="avatar">⚡</div><strong>Jungler</strong><small>OBJECTIVE</small><p>Amankan Turtle dan Lord</p></div>
+<div class="player"><div class="avatar">🎯</div><strong>Gold Laner</strong><small>FINISHER</small><p>Jaga posisi dan damage</p></div>
+</div>
+</div></section>
+<section id="gabung"><div class="wrap">
+<div class="joinbox"><div><div class="kicker">Siap turun ke Land of Dawn?</div><h2>INDOMARET GG. IQ menunggu.</h2><p>Hubungi ketua guild untuk info masuk. Ganti tombol di bawah dengan tautan WhatsApp, Discord, atau profil guild yang benar sebelum membagikan website ini ke publik.</p></div><button class="btn btn-primary" id="copyBtn">📋 Salin Pesan Gabung</button></div>
+</div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> <span class="tag">INDOMARET GG. IQ</span> · Fan community</span><span>Dibuat untuk komunitas MLBB dengan semangat fair play.</span></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('copyBtn').addEventListener('click',async()=>{
+ const message='Halo, saya ingin bergabung dengan guild Indomaret GG. IQ. Nama game/ID saya: _____. Role favorit: _____.';
+ const btn=document.getElementById('copyBtn');
+ try{await navigator.clipboard.writeText(message);btn.textContent='✓ Pesan Tersalin!';}
+ catch(e){const area=document.createElement('textarea');area.value=message;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();btn.textContent='✓ Pesan Tersalin!';}
+ setTimeout(()=>btn.textContent='📋 Salin Pesan Gabung',2200);
+});
+</script>
+</body>
+</html>
